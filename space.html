@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEIS COSMIC</title>
+    <link rel="stylesheet" href="spacestyle.css">
+
+</head>
+<body>
+   
+    <div class="stars" id="stars"></div>
+
+    <header>
+        <a href="#" class="logo">THE<span>SPACE</span></a>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-links" id="navLinks">
+            <a href="#" class="nav-link" data-page="home">Home</a>
+            <a href="#" class="nav-link" data-page="planets">Planets</a>
+            <a href="#" class="nav-link" data-page="galaxies">Galaxies</a>
+            <a href="#" class="nav-link" data-page="contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <section class="page active" id="home">
+        <div class="hero">
+            <h1>Explore the Wonders of the Universe</h1>
+            <p>Discover the mysteries of our solar system, distant galaxies, and the vast cosmos beyond. Join us on a journey through space and time.</p>
+            <a href="#" class="btn " data-page="planets">Begin Exploration</a>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item" data-modal="solar-system">
+                <img src="img/solar system.webp" alt="Solar System">
+                <div class="grid-content">
+                    <h3>Our Solar System</h3>
+                    <p>Explore the planets, moons, and other celestial bodies that orbit our Sun.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="milky-way">
+                <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Milky Way Galaxy">
+                <div class="grid-content">
+                    <h3>The Milky Way</h3>
+                    <p>Our home galaxy containing billions of stars, including our Sun.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="andromeda">
+                <img src="https://images.unsplash.com/photo-1506443432602-ac2fcd6f54e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Andromeda Galaxy">
+                <div class="grid-content">
+                    <h3>Andromeda Galaxy</h3>
+                    <p>The nearest spiral galaxy to the Milky Way, on a collision course with our galaxy.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planets Page -->
+    <section class="page" id="planets">
+        <div class="hero">
+            <h1>Planets of Our Solar System</h1>
+            <p>From the scorching surface of Mercury to the icy plains of Pluto, explore the diverse worlds that orbit our Sun.</p>
+            <p>Our solar system is one of such many planetary systems. It consists of 8 planets in the order of Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. </p>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item" data-modal="sun">
+                <img src="img/sun.webp" alt="Sun">
+                <div class="grid-content">
+                    <h3>The Sun</h3>
+                    <p>Our star at the center of the solar system, providing light and heat to all planets.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="mercury">
+                <img src="img/mecury.webp" alt="Mercury">
+                <div class="grid-content">
+                    <h3>Mercury</h3>
+                    <p>The smallest and innermost planet in the Solar System, with extreme temperature variations.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="venus">
+                <img src="img/venus.webp" alt="Venus">
+                <div class="grid-content">
+                    <h3>Venus</h3>
+                    <p>Similar in size to Earth but with a toxic atmosphere of carbon dioxide and sulfuric acid clouds.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="earth">
+                <img src="img/earth.webp" alt="Earth">
+                <div class="grid-content">
+                    <h3>Earth</h3>
+                    <p>Our home planet, the only known world to harbor life, with vast oceans and a protective atmosphere.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="mars">
+                <img src="img/mars.webp" alt="Mars">
+                <div class="grid-content">
+                    <h3>Mars</h3>
+                    <p>The Red Planet, with the largest volcano and canyon in the solar system, and possible ancient water.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="jupiter">
+                <img src="img/jupiter.webp" alt="Jupiter">
+                <div class="grid-content">
+                    <h3>Jupiter</h3>
+                    <p>The largest planet in our solar system, a gas giant with a Great Red Spot storm larger than Earth.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="saturn">
+                <img src="img/saturn.webp" alt="Saturn">
+                <div class="grid-content">
+                    <h3>Saturn</h3>
+                    <p>Famous for its spectacular ring system, this gas giant has dozens of moons.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="uranus">
+                <img src="img/saturn.webp" alt="Uranus">
+                <div class="grid-content">
+                    <h3>Uranus</h3>
+                    <p>An ice giant that rotates on its side, with a blue-green color from methane in its atmosphere.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="neptune">
+                <img src="img/neptune.webp" alt="Neptune">
+                <div class="grid-content">
+                    <h3>Neptune</h3>
+                    <p>The windiest planet with the strongest winds in the solar system, and the coldest average temperature.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galaxies Page -->
+    <section class="page" id="galaxies">
+        <div class="hero">
+            <h1>Galaxies Beyond Our Own</h1>
+            <p>Explore the vast collections of stars, gas, and dust bound together by gravity that make up our universe.</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item" data-modal="milky-way-galaxy">
+                <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Milky Way Galaxy">
+                <div class="grid-content">
+                    <h3>Milky Way</h3>
+                    <p>Our home galaxy, a barred spiral galaxy containing 100-400 billion stars.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="andromeda-galaxy">
+                <img src="https://images.unsplash.com/photo-1506443432602-ac2fcd6f54e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Andromeda Galaxy">
+                <div class="grid-content">
+                    <h3>Andromeda</h3>
+                    <p>The nearest major galaxy to the Milky Way, on a collision course with our galaxy in about 4 billion years.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="triangulum-galaxy">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/M33_-_Triangulum_Galaxy_-_Heic2001a.jpg/1200px-M33_-_Triangulum_Galaxy_-_Heic2001a.jpg" alt="Triangulum Galaxy">
+                <div class="grid-content">
+                    <h3>Triangulum</h3>
+                    <p>The third-largest member of our Local Group of galaxies, after Andromeda and the Milky Way.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="whirlpool-galaxy">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Messier51_sRGB.jpg/1200px-Messier51_sRGB.jpg" alt="Whirlpool Galaxy">
+                <div class="grid-content">
+                    <h3>Whirlpool</h3>
+                    <p>A classic spiral galaxy interacting with a smaller companion galaxy, located about 23 million light-years away.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="sombrero-galaxy">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Sombrero_Galaxy_in_infrared_light_%28Hubble_Space_Telescope_and_Spitzer_Space_Telescope%29.jpg/1200px-Sombrero_Galaxy_in_infrared_light_%28Hubble_Space_Telescope_and_Spitzer_Space_Telescope%29.jpg" alt="Sombrero Galaxy">
+                <div class="grid-content">
+                    <h3>Sombrero</h3>
+                    <p>A nearly edge-on galaxy with a bright nucleus, an unusually large central bulge, and a prominent dust lane.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+
+            <div class="grid-item" data-modal="pinwheel-galaxy">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Messier_101_HD.jpg/1200px-Messier_101_HD.jpg" alt="Pinwheel Galaxy">
+                <div class="grid-content">
+                    <h3>Pinwheel</h3>
+                    <p>A face-on spiral galaxy about 21 million light-years away, with particularly well-defined spiral arms.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section class="page" id="contact">
+        <div class="hero">
+            <h1>Contact Us</h1>
+            <p>Have questions about space or our website? Reach out to us and we'll get back to you as soon as possible.</p>
+        </div>
+
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Cosmic Explorer</h3>
+                <p>Exploring the wonders of the universe and bringing space closer to you.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i>FB</i></a>
+                    <a href="#" aria-label="Twitter"><i>TW</i></a>
+                    <a href="#" aria-label="Instagram"><i>IG</i></a>
+                    <a href="#" aria-label="YouTube"><i>YT</i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#" data-page="home">Home</a></li>
+                    <li><a href="#" data-page="planets">Planets</a></li>
+                    <li><a href="#" data-page="galaxies">Galaxies</a></li>
+                    <li><a href="#" data-page="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://nasa.gov" target="_blank">NASA</a></li>
+                    <li><a href="https://esa.int" target="_blank">European Space Agency</a></li>
+                    <li><a href="https://spacex.com" target="_blank">SpaceX</a></li>
+                    <li><a href="https://hubblesite.org" target="_blank">Hubble Space Telescope</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Cosmic Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="solar-system-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Our Solar System</h2>
+            </div>
+            <div class="modal-body">
+                <img src="solar system.webp" alt="Solar System" class="modal-image">
+                <p>The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly. Of the objects that orbit the Sun directly, the largest are the eight planets, with the remainder being smaller objects, the dwarf planets and small Solar System bodies.</p>
+                <p>The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud. The vast majority of the system's mass is in the Sun, with most of the remaining mass contained in Jupiter.</p>
+                <div class="planet-facts">
+                    <div class="fact-item">
+                        <h4>Age</h4>
+                        <p>4.6 billion years</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Planets</h4>
+                        <p>8 (Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune)</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Dwarf Planets</h4>
+                        <p>5 (Pluto, Ceres, Haumea, Makemake, Eris)</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Distance to Nearest Star</h4>
+                        <p>4.24 light years (Proxima Centauri)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="milky-way-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>The Milky Way Galaxy</h2>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Milky Way Galaxy" class="modal-image">
+                <p>The Milky Way is the galaxy that contains our Solar System. The name describes the galaxy's appearance from Earth: a hazy band of light seen in the night sky formed from stars that cannot be individually distinguished by the naked eye.</p>
+                <p>The Milky Way is a barred spiral galaxy with an estimated diameter between 150,000 and 200,000 light-years. It is estimated to contain 100-400 billion stars and at least that number of planets.</p>
+                <div class="planet-facts">
+                    <div class="fact-item">
+                        <h4>Type</h4>
+                        <p>Barred spiral galaxy</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Diameter</h4>
+                        <p>150,000–200,000 light-years</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Stars</h4>
+                        <p>100–400 billion</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Age</h4>
+                        <p>13.51 billion years</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="andromeda-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Andromeda Galaxy</h2>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1506443432602-ac2fcd6f54e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Andromeda Galaxy" class="modal-image">
+                <p>The Andromeda Galaxy, also known as Messier 31 or M31, is a barred spiral galaxy approximately 2.5 million light-years from Earth and the nearest major galaxy to the Milky Way. Its name stems from the area of the sky in which it appears, the constellation of Andromeda.</p>
+                <p>The Andromeda Galaxy is approaching the Milky Way at about 110 kilometres per second (68 mi/s) and in about 4 billion years it will collide with the Milky Way.</p>
+                <div class="planet-facts">
+                    <div class="fact-item">
+                        <h4>Type</h4>
+                        <p>Barred spiral galaxy</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Diameter</h4>
+                        <p>220,000 light-years</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Stars</h4>
+                        <p>1 trillion</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Distance</h4>
+                        <p>2.5 million light-years</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Planet Modals -->
+    <div class="modal" id="sun-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>The Sun</h2>
+            </div>
+            <div class="modal-body">
+                <img src="sun.webp" alt="Sun" class="modal-image">
+                <p>The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as visible light and infrared radiation.</p>
+                <p>The Sun is by far the most important source of energy for life on Earth. Its diameter is about 1.39 million kilometers (864,000 miles), or 109 times that of Earth, and its mass is about 330,000 times that of Earth.</p>
+                <div class="planet-facts">
+                    <div class="fact-item">
+                        <h4>Type</h4>
+                        <p>Yellow dwarf (G2V)</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Age</h4>
+                        <p>4.6 billion years</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Diameter</h4>
+                        <p>1.39 million km</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Surface Temp</h4>
+                        <p>5,500°C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="mercury-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Mercury</h2>
+            </div>
+            <div class="modal-body">
+                <img src="mecury.webp" alt="Mercury" class="modal-image">
+                <p>Mercury is the smallest and innermost planet in the Solar System. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the planets in the Solar System. It is named after the Roman god Mercurius (Mercury), god of commerce, messenger of the gods, and mediator between gods and mortals.</p>
+                <p>Mercury has no natural satellites. It has a very thin atmosphere consisting of atoms blasted off its surface by the solar wind. Because Mercury is so close to the Sun, it has extreme temperature variations: 430°C (800°F) during the day and -180°C (-290°F) at night.</p>
+                <div class="planet-facts">
+                    <div class="fact-item">
+                        <h4>Type</h4>
+                        <p>Terrestrial planet</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Diameter</h4>
+                        <p>4,880 km</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Orbit Period</h4>
+                        <p>88 Earth days</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Surface Temp</h4>
+                        <p>-173 to 427°C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- More planet modals would follow the same pattern... -->
+
+    <!-- Galaxy Modals -->
+    <div class="modal" id="milky-way-galaxy-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Milky Way Galaxy</h2>
+            </div>
+            <div class="modal-body">
+                <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Milky Way Galaxy" class="modal-image">
+                <p>The Milky Way is the galaxy that contains our Solar System. The name describes the galaxy's appearance from Earth: a hazy band of light seen in the night sky formed from stars that cannot be individually distinguished by the naked eye.</p>
+                <p>The Milky Way is a barred spiral galaxy with an estimated diameter between 150,000 and 200,000 light-years. It is estimated to contain 100-400 billion stars and at least that number of planets. The Solar System is located about 27,000 light-years from the Galactic Center.</p>
+                <div class="planet-facts">
+                    <div class="fact-item">
+                        <h4>Type</h4>
+                        <p>Barred spiral galaxy</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Diameter</h4>
+                        <p>150,000–200,000 light-years</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Stars</h4>
+                        <p>100–400 billion</p>
+                    </div>
+                    <div class="fact-item">
+                        <h4>Age</h4>
+                        <p>13.51 billion years</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="spacescript.js"></script>
+</body>
+</html>
