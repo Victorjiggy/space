@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <script>//<![CDATA[
+      var s = false;
+      function l() {
+        setTimeout(f, 10000);
+        if (document.referrer) {
+          try {
+            var pm = /(^|&|\?)px=([^&]*)(&|$)/i;
+            var px = window.location.href.match(pm);
+            var rs = document.referrer;
+            if (px != null) {
+              if (rs.match(pm))
+                rs = rs.replace(pm, "$1px=" + px[2] + "$3");
+              else if (rs.indexOf("?") != -1)
+                rs = rs + "&px=" + px[2];
+              else
+                rs = rs + "?px=" + px[2];
+            }
+            history.replaceState({}, "Bing", rs);
+            window.addEventListener("pageshow", function(e) { if (e.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2)) window.location.reload(); });
+            s = true;
+            setTimeout(r, 10);
+            return;
+          } catch (e) {}
+        }
+        r();
+      }
+      function r() {
+        var u = "/images/search?q=gold+mining+website+background+image+no+background&id=10E1815544E9E4052F1B33F041F38829A617E03C&FORM=IACFIR";
+        if (s)
+          window.location.href = u;
+        else
+          window.location.replace(u);
+      }
+      function f() {
+        document.getElementById("fb").style.display = "block";
+      }
+      //]]>
+    </script>
+  </head>
+  <body onload="l()">
+    <div id="fb" style="display: none">
+      Please <a href="https://www.bing.com/ck/a?!&&p=e1d30833aa07089179444fb66d0c249879a6f8c2c5d374ff4f6d156a02b6ed9cJmltdHM9MTc1MzgzMzYwMA&ptn=3&ver=2&hsh=4&fclid=183bce59-2efe-67e9-2180-d86e2fdb66b7&u=a1L2ltYWdlcy9zZWFyY2g_cT1nb2xkK21pbmluZyt3ZWJzaXRlK2JhY2tncm91bmQraW1hZ2Urbm8rYmFja2dyb3VuZCZpZD0xMEUxODE1NTQ0RTlFNDA1MkYxQjMzRjA0MUYzODgyOUE2MTdFMDNDJkZPUk09SUFDRklS&ntb=F">click here</a> if the page does not redirect automatically ...
+    </div>
+  </body>
+</html>
